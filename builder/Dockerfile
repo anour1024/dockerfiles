@@ -12,5 +12,5 @@ COPY devel_passwd.txt /devel_passwd.txt
 COPY entry_point.sh /entry_point.sh
 WORKDIR /home/devel
 ENTRYPOINT [ "sh", "/entry_point.sh" ]
-CMD ["tail", "-f", "/dev/null"]
+CMD ["bash"]
 
