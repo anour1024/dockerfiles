@@ -11,6 +11,7 @@ RUN useradd -m -d /home/devel -s /bin/bash devel
 COPY devel_passwd.txt /devel_passwd.txt
 COPY entry_point.sh /entry_point.sh
 WORKDIR /home/devel
+EXPOSE 22
 ENTRYPOINT [ "sh", "/entry_point.sh" ]
 CMD ["bash"]
 
